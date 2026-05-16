@@ -1,0 +1,21 @@
+<section id="certifications" class="section-gap px-4 bg-surface-dim">
+  <div class="container-max">
+    <div class="d-flex flex-column mb-5 align-items-center text-center" style="gap: 1rem;">
+      <h2 class="text-headline-lg text-white-toggle font-display m-0">Certifications</h2>
+      <div class="bg-primary-container rounded-pill mx-auto" style="height: 4px; width: 6rem;"></div>
+    </div>
+
+    <div class="row justify-content-center g-4">
+      <div class="col-12 col-md-4" *ngFor="let cert of certifications">
+        <div class="glass-card p-5 rounded-xl d-flex flex-column align-items-center text-center shimmer-effect h-100 electric-glow transition-all" style="border: 1px solid var(--outline-variant);">
+          <span class="material-symbols-outlined text-primary mb-4" style="font-size: 3.5rem;">verified</span>
+          <h3 class="text-white-toggle font-display fs-4 mb-2">{{ cert.title }}</h3>
+          <p class="text-on-surface-variant font-display mb-3">{{ cert.issuer }}</p>
+          <span class="text-primary font-display fw-bold text-label-caps mt-auto bg-surface-container px-3 py-2 rounded-pill border border-primary-container">
+             {{ cert.date }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

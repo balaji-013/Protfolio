@@ -1,0 +1,14 @@
+:host ::ng-deep .customized-timeline .p-timeline-event-opposite {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  :host ::ng-deep .customized-timeline .p-timeline-event-opposite {
+    display: block;
+    flex: 1;
+    padding: 0 1rem;
+  }
+}
+
+.timeline-row { display: flex; }
+.timeline-marker { min-width: 3rem; display:flex; align-items:center; justify-content:center; }

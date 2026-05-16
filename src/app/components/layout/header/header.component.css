@@ -1,0 +1,155 @@
+.theme-toggle-container {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.theme-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(var(--surface-rgb, 255, 255, 255), 0.05);
+    backdrop-filter: blur(10px);
+    color: var(--on-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(var(--surface-rgb, 255, 255, 255), 0.1);
+}
+
+.theme-btn:hover {
+    background: rgba(var(--surface-rgb, 255, 255, 255), 0.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--primary-container);
+}
+
+.theme-icon {
+    font-size: 1.5rem;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+.sun-icon {
+    transform: translateY(0);
+}
+
+.moon-icon {
+    transform: translateY(0);
+}
+
+/* Animation for theme switch */
+.theme-btn .material-symbols-outlined {
+    position: absolute;
+}
+
+.theme-btn .sun-icon {
+    opacity: 0;
+    transform: translateY(30px) rotate(90deg);
+}
+
+.theme-btn .moon-icon {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+[data-theme="light"] .theme-btn .sun-icon {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+
+[data-theme="light"] .theme-btn .moon-icon {
+    opacity: 0;
+    transform: translateY(-30px) rotate(-90deg);
+}
+
+@media (max-width: 768px) {
+    .theme-toggle-container {
+        position: fixed;
+        right: 0.75rem;
+        top: 1.5rem;
+        transform: none;
+        z-index: 1100;
+        flex-direction: column-reverse;
+        gap: 0.75rem !important;
+        align-items: center;
+    }
+    .color-picker-wrapper {
+        padding-right: 0;
+        justify-content: center;
+    }
+    .animate-fade-in {
+        animation: fadeInMobile 0.3s ease-out;
+    }
+}
+
+@keyframes fadeInMobile {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.me-1 {
+  margin-right: -0.75rem !important;
+}
+
+.color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-right: 0.5rem;
+}
+
+.color-input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--outline-variant);
+    border-radius: 50%;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color-input::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.color-input:hover {
+    transform: scale(1.15);
+    border-color: var(--primary);
+}
+
+.color-picker-label {
+    font-size: 0.7rem;
+    color: var(--on-surface-variant);
+    white-space: nowrap;
+    opacity: 0.8;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.me-1 {
+  margin-right: -0.75rem !important;
+}

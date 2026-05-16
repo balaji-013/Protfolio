@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  --surface: #0d1516;
+  --surface-dim: #0d1516;
+  --surface-bright: #333a3c;
+  --surface-container-lowest: #080f11;
+  --surface-container-low: #161d1f;
+  --surface-container: #1a2123;
+  --surface-container-high: #242b2d;
+  --surface-container-highest: #2f3638;
+  --on-surface: #dce4e6;
+  --on-surface-variant: #bac9cd;
+  --inverse-surface: #dce4e6;
+  --inverse-on-surface: #2a3233;
+  --outline: #859397;
+  --outline-variant: #3b494c;
+  --surface-tint: #00daf8;
+  --primary: #baf2ff;
+  --on-primary: #00363f;
+  --primary-container: #00e0ff;
+  --on-primary-container: #005f6d;
+  --background: #0d1516;
+  --on-background: #dce4e6;
+  
+  --spacing-gutter: 24px;
+  --spacing-element: 16px;
+  --spacing-section: 120px;
+  --container-max: 1200px;
+  
+  --font-display: 'Space Grotesk', sans-serif;
+  --surface-rgb: 13, 21, 22;
+  --background-rgb: 13, 21, 22;
+}
+
+/* Reference global styles (see src/styles.reference.css) */

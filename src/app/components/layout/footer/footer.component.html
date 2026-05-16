@@ -1,0 +1,63 @@
+<footer class="w-100 d-flex flex-column align-items-center px-4 bg-black-toggle position-relative overflow-hidden"
+  style="border-top: 1px solid var(--outline-variant); padding-top: 3rem; padding-bottom: 1.5rem; box-shadow: 0 -10px 30px rgba(0,0,0,0.05);">
+
+  <div class="position-absolute rounded-pill blur-120"
+    style="top: -8rem; left: 20%; width: 25rem; height: 25rem; background: var(--primary-container); opacity: 0.05; pointer-events: none;">
+  </div>
+  <div class="position-absolute rounded-pill blur-120"
+    style="bottom: -10rem; right: 10%; width: 30rem; height: 30rem; background: var(--primary); opacity: 0.03; pointer-events: none;">
+  </div>
+
+  <div class="container-max w-100">
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6">
+        <p class="text-on-surface-variant font-display mb-4" style="font-size: 0.95rem; line-height: 1.7; opacity: 0.8;">
+          {{ resume.profile.tagline }}
+        </p>
+        <div class="d-flex align-items-center" style="gap: 1.5rem;">
+          <a *ngIf="resume.profile.linkedin" class="text-white-toggle opacity-50 hover-opacity-100 transition-all" [href]="resume.profile.linkedin" target="_blank" rel="noopener">
+            <i class="pi pi-linkedin" style="font-size: 1.5rem;"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-6">
+        <h4 class="text-white-toggle font-display text-label-caps mb-4">Core Stack</h4>
+        <div class="d-flex flex-wrap gap-2">
+          <ng-container *ngFor="let cat of resume.skills">
+            <span *ngFor="let item of cat.items.slice(0,3)"
+              class="badge rounded-pill border border-outline-variant text-on-surface-variant font-display py-2 px-3 d-flex align-items-center justify-content-center"
+              style="font-size: 1.2rem; background: rgba(255,255,255,0.03); width: 2.5rem; height: 2.5rem; padding: 0 !important;" [title]="item.name">
+              <img *ngIf="item.icon.startsWith('http') || item.icon.startsWith('data:') || item.icon.startsWith('/')" [src]="item.icon" [alt]="item.name" style="width: 1.5rem; height: 1.5rem; object-fit: contain;">
+              <i *ngIf="!item.icon.startsWith('http') && !item.icon.startsWith('data:') && !item.icon.startsWith('/') && !item.icon.includes(':')" [class]="item.icon"></i>
+            </span>
+          </ng-container>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-12 d-flex flex-column align-items-lg-end">
+        <h4 class="text-white-toggle font-display text-label-caps mb-4">Navigation</h4>
+        <ul class="list-unstyled d-flex flex-column gap-2 text-lg-end">
+          <li><a (click)="scrollToTop()" class="text-on-surface-variant font-display hover-primary transition-all pointer" style="font-size: 0.9rem; cursor: pointer;">Back to Top</a></li>
+          <li><a (click)="scrollToSection('projects')" class="text-on-surface-variant font-display hover-primary transition-all" style="font-size: 0.9rem; cursor: pointer;">Projects</a></li>
+          <li><a (click)="scrollToSection('experience')" class="text-on-surface-variant font-display hover-primary transition-all" style="font-size: 0.9rem; cursor: pointer;">Experience</a></li>
+          <li><a (click)="scrollToSection('contact')" class="text-on-surface-variant font-display hover-primary transition-all" style="font-size: 0.9rem; cursor: pointer;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w-100 mt-4 mb-3" style="height: 1px; background: linear-gradient(to right, transparent, rgba(var(--surface-rgb, 255, 255, 255), 0.1), transparent);">
+    </div>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center" style="gap: 0.75rem;">
+        <span class="rounded-circle d-inline-block pulse-dot-themed" style="width: 8px; height: 8px; background: #00e676; box-shadow: 0 0 10px #00e676; animation: pulse-dot 2s infinite;"></span>
+        <span class="text-on-surface-variant font-display" style="font-size: 0.85rem; letter-spacing: 0.05em;">Available for new projects</span>
+      </div>
+
+      <div class="text-on-surface-variant font-display text-uppercase" style="letter-spacing: 0.1em; font-size: 0.75rem; opacity: 0.6;">
+        {{ currentYear }} Balaji S - Designed and developed for enterprise impact
+      </div>
+    </div>
+  </div>
+</footer>

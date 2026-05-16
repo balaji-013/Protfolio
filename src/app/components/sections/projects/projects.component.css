@@ -1,0 +1,7 @@
+.hover-primary:hover {
+  color: var(--primary) !important;
+}
+
+.ptr-events-none {
+  pointer-events: none;
+}

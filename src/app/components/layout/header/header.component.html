@@ -1,0 +1,36 @@
+<header class="fixed-top d-flex justify-content-center w-100 px-4" style="z-index: 1050;">
+  <nav class="glass-card rounded-pill mt-4 mx-auto d-flex align-items-center"
+    style="padding: 0.5rem 1.5rem; gap: 2rem;">
+    <div (click)="scrollToTop()" class="text-on-surface-variant font-display d-flex align-items-center gap-1 nav-link fw-semibold" style="cursor: pointer;">
+      Home
+    </div>
+    <div class="d-none d-md-flex align-items-center" style="gap: 1.5rem;">
+      <a (click)="scrollToSection('projects')" class="text-on-surface-variant font-display d-flex align-items-center gap-1 nav-link" style="cursor: pointer;">Projects</a>
+      <a (click)="scrollToSection('skills')" class="text-on-surface-variant font-display d-flex align-items-center gap-1 nav-link" style="cursor: pointer;">Skills</a>
+      <a (click)="scrollToSection('experience')" class="text-on-surface-variant font-display d-flex align-items-center gap-1 nav-link" style="cursor: pointer;">Experience</a>
+      <a (click)="scrollToSection('contact')" class="text-on-surface-variant font-display d-flex align-items-center gap-1 nav-link" style="cursor: pointer;">Contact</a>
+    </div>
+    <a href="/assets/Resume-Balaji-S.pdf" download="Resume-Balaji-S.pdf"
+      class="btn bg-primary-container text-on-primary-container rounded-pill fw-bold border-0 px-4 py-2 transition-all electric-glow text-decoration-none d-flex align-items-center gap-2">
+      Resume
+    </a>
+  </nav>
+
+  <div class="theme-toggle-container d-flex align-items-center" style="gap: 1rem;">
+    <!-- Color Theme Picker (Visible in Light Mode) -->
+    <div *ngIf="!isDarkMode" class="d-flex align-items-center gap-3 animate-fade-in me-1">
+      <div class="color-picker-wrapper">
+        <input type="color" 
+          [value]="currentThemeColor"
+          (input)="onColorChange($event)"
+          class="color-input"
+          title="Choose your theme color">
+        <div class="color-picker-label font-display text-label-caps d-none d-lg-block">Pick Theme Color</div>
+      </div>
+    </div>
+    <button class="theme-btn" (click)="toggleTheme()" [title]="isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'">
+      <span class="material-symbols-outlined theme-icon sun-icon">light_mode</span>
+      <span class="material-symbols-outlined theme-icon moon-icon">dark_mode</span>
+    </button>
+  </div>
+</header>

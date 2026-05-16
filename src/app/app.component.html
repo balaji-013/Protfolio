@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<main>
+  <app-hero 
+    [role]="resume.profile.role" 
+    [summary]="resume.profile.summary">
+  </app-hero>
+  
+  <app-projects 
+    [projects]="resume.projects">
+  </app-projects>
+  
+  <app-skills 
+    [skills]="resume.skills">
+  </app-skills>
+  
+  <app-experience 
+    [experience]="resume.experience">
+  </app-experience>
+  
+  <app-certifications
+    [certifications]="resume.certifications">
+  </app-certifications>
+  
+  <app-contact 
+    [email]="resume.profile.email" 
+    [phone]="resume.profile.phone">
+  </app-contact>
+</main>
+
+<app-footer></app-footer>
