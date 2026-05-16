@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balaji S | Full Stack Developer</title>
+  <meta name="description"
+    content="Balaji S – Full Stack Developer specializing in .NET, Angular & SQL Server. 2.5+ years building enterprise-grade applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav id="navbar" role="navigation">
+    <div class="nav-logo">BS<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:balajisrini013@gmail.com" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <a class="skip-link" href="#about">Skip to About</a>
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Balaji <span class="accent">S</span></h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-static">Full Stack Developer &mdash;</span>
+        <span class="hero-typewriter" id="typewriter"></span>
+      </div>
+      <p class="hero-summary">
+        2.5+ years crafting enterprise-grade applications with <span class="tag">.NET Core</span> <span
+          class="tag">Angular</span> <span class="tag">SQL Server</span> — delivering 30% efficiency gains and 40% fewer
+        bugs in production.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">2.5+</span><span class="stat-label">Years Exp</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">30%</span><span class="stat-label">Efficiency Gain</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">40%</span><span class="stat-label">Bug Reduction</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" tabindex="-1">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-inner">BS</div>
+          </div>
+          <div class="avatar-badge">Chennai, India 🇮🇳</div>
+        </div>
+        <div class="about-text">
+          <p>Results-driven <strong>Full Stack Developer</strong> with 2.5+ years of experience designing and delivering
+            enterprise-grade applications using <strong>C#, ASP.NET Core, Angular, and SQL Server</strong>.</p>
+          <p>I specialize in RESTful API development, IIS deployment, database optimization, and third-party service
+            integration. Currently expanding expertise in <strong>AI/ML integration</strong> and <strong>Azure cloud
+              services</strong>.</p>
+          <p>I thrive in Agile/Scrum environments and leverage cutting-edge AI tools (GitHub Copilot, Claude AI) to
+            accelerate development and boost team productivity.</p>
+          <div class="about-contact-row">
+            <a href="tel:+917338979707" class="contact-pill">📞 +91 73389 79707</a>
+            <a href="mailto:balajisrini013@gmail.com" class="contact-pill">✉️ balajisrini013@gmail.com</a>
+            <a href="https://linkedin.com/in/bala013ibis" target="_blank" class="contact-pill">💼 LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span>C#</span><span>ASP.NET Core</span><span>.NET Framework</span>
+            <span>Web API</span><span>Entity Framework Core</span><span>LINQ</span>
+            <span>JWT Auth</span><span>Middleware</span><span>Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">🅰️</div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span>Angular 14/15/16</span><span>TypeScript</span><span>JavaScript</span>
+            <span>RxJS</span><span>NgRx</span><span>HTML5</span>
+            <span>CSS3</span><span>Bootstrap</span><span>SPA</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">🗄️</div>
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <span>SQL Server</span><span>T-SQL</span><span>Stored Procedures</span>
+            <span>Query Optimization</span><span>Indexing</span><span>SSMS</span><span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">🚀</div>
+          <h3>DevOps & QA</h3>
+          <div class="skill-tags">
+            <span>IIS Deployment</span><span>SSL Bindings</span><span>SVN</span>
+            <span>NUnit</span><span>TDD</span><span>Agile/Scrum</span><span>Code Reviews</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon">🤖</div>
+          <h3>AI & Cloud</h3>
+          <div class="skill-tags">
+            <span>Python NLP</span><span>LLM Integration</span><span>Azure Services</span>
+            <span>Flask/Django</span><span>Document Intelligence</span><span>Text Processing</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="500">
+          <div class="skill-icon">🔌</div>
+          <h3>Integrations & Tools</h3>
+          <div class="skill-tags">
+            <span>Authbridge</span><span>Emsigner</span><span>Naukri API</span>
+            <span>RESTful Services</span><span>GitHub Copilot</span><span>Claude AI</span><span>VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-label">03 / Experience</div>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Platform Engineer <span class="role-type">(Full Stack Developer)</span></h3>
+                <p class="company">Adrenalin E-Systems Limited · Intellect Group</p>
+              </div>
+              <span class="timeline-date">Aug 2023 – Present</span>
+            </div>
+            <div class="timeline-body">
+              <div class="exp-category">
+                <h4>⚙️ Backend & API Development</h4>
+                <ul>
+                  <li>Designed reusable RESTful Web APIs in C# ASP.NET Core for HR modules — Talent Development,
+                    Acquisition, Operations & Engagement</li>
+                  <li>Integrated Authbridge, Emsigner & Naukri API into backend workflows and Angular frontend
+                    components</li>
+                  <li>Optimized SQL Server stored procedures delivering <strong>30% improvement in system
+                      efficiency</strong></li>
+                  <li>Implemented dependency injection, middleware pipelines & JWT authentication</li>
+                </ul>
+              </div>
+              <div class="exp-category">
+                <h4>🖥️ IIS Deployment & Maintenance</h4>
+                <ul>
+                  <li>Deployed and maintained ASP.NET Core apps on IIS — app pools, SSL certs, site bindings</li>
+                  <li>Proactively reduced production downtime through health monitoring and hotfixes</li>
+                </ul>
+              </div>
+              <div class="exp-category">
+                <h4>🅰️ Frontend Development (Angular)</h4>
+                <ul>
+                  <li>Built Angular components with TypeScript, RxJS & NgRx integrated with .NET Web APIs</li>
+                  <li>Implemented NUnit TDD practices — <strong>reduced production bugs by 40%</strong></li>
+                  <li>Accelerated development with GitHub Copilot, Claude AI & Antigravity for workflow automation</li>
+                </ul>
+              </div>
+              <div class="exp-category">
+                <h4>🤖 AI Feature Development</h4>
+                <ul>
+                  <li>Built Python NLP Resume Matcher for intelligent candidate screening</li>
+                  <li>Developed Document Q&A system using text processing & retrieval algorithms</li>
+                  <li>Architecting Flask/Django microservices to expose AI capabilities within .NET stack</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-label">04 / Projects</div>
+      <h2 class="section-title">Key Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-glow"></div>
+          <div class="project-tag">Featured</div>
+          <div class="project-icon">🏗️</div>
+          <h3>Adrenalin JASON Integration Framework</h3>
+          <p>Enterprise HR integration framework enabling seamless data exchange across modules. Full-stack ownership
+            from API design to IIS deployment with third-party integrations.</p>
+          <div class="project-stack">
+            <span>ASP.NET Core</span><span>Angular</span><span>SQL Server</span>
+            <span>IIS</span><span>JWT</span><span>REST APIs</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✅ Multi-module HR platform APIs</div>
+            <div class="highlight">✅ Third-party service integrations</div>
+            <div class="highlight">✅ Agile sprint delivery</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-icon">📄</div>
+          <h3>Resume Matcher System</h3>
+          <p>Python NLP-powered resume screening tool that automates candidate-job matching using text processing and
+            similarity algorithms — integrated with the Angular/ASP.NET Core HR platform.</p>
+          <div class="project-stack">
+            <span>Python</span><span>NLP</span><span>Angular</span><span>ASP.NET Core</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✅ Automated candidate screening</div>
+            <div class="highlight">✅ Similarity algorithm at scale</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-glow"></div>
+          <div class="project-icon">🔍</div>
+          <h3>Document Q&A System</h3>
+          <p>Intelligent document search and Q&A engine built with Python text processing and retrieval algorithms.
+            Deployed as a standalone microservice within the .NET and IIS ecosystem.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Flask</span><span>NLP</span><span>Microservices</span><span>IIS</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✅ Knowledge extraction from docs</div>
+            <div class="highlight">✅ Microservice architecture</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-label">05 / Achievements</div>
+      <h2 class="section-title">Impact & Recognition</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">⚡</div>
+          <div class="achievement-num">30%</div>
+          <div class="achievement-title">System Efficiency</div>
+          <p>Delivered measurable performance gains through SQL optimization and architecture improvements across
+            integration workflows</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🛡️</div>
+          <div class="achievement-num">40%</div>
+          <div class="achievement-title">Bug Reduction</div>
+          <p>Implemented NUnit TDD framework that dramatically reduced production bug reports and improved release
+            quality</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🤝</div>
+          <div class="achievement-num">★</div>
+          <div class="achievement-title">Cross-functional Excellence</div>
+          <p>Recognized for problem-solving, timely delivery, and collaboration across Agile sprints and production
+            deployments</p>
+        </div>
+      </div>
+
+      <div class="education-block">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <h3>Bachelor of Engineering — Computer Science & Engineering</h3>
+          <p>Sri Sairam Institute of Technology, Chennai &nbsp;|&nbsp; <span class="edu-year">2018 – 2022</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERVIEW PREP BANNER -->
+  <!-- <section id="prep" class="section section-dark">
+    <div class="container">
+      <div class="prep-banner">
+        <div class="prep-icon">💡</div>
+        <div class="prep-content">
+          <h2>Interview Preparation Guide</h2>
+          <p>Quick-reference cheatsheets for your Accenture interview — core concepts, common questions, and model answers based on your real project experience.</p>
+          <div class="prep-topics">
+            <div class="prep-topic" onclick="toggleTopic(this)">
+              <div class="prep-topic-header">
+                <span>🔷 Angular Core Concepts</span><span class="arrow">▾</span>
+              </div>
+              <div class="prep-topic-body">
+                <ul>
+                  <li><strong>Q: What is Change Detection in Angular?</strong><br/>A: Angular's mechanism to sync model & view. Default checks all components; OnPush checks only when input references change — improves performance in large apps.</li>
+                  <li><strong>Q: RxJS Observables vs Promises?</strong><br/>A: Observables are lazy, cancellable, and support multiple values over time. Promises are eager and handle a single async value.</li>
+                  <li><strong>Q: What is NgRx and when did you use it?</strong><br/>A: Redux-pattern state management for Angular. Used it in HR modules to manage complex shared state across components, avoiding prop-drilling and side-effect sprawl.</li>
+                  <li><strong>Q: Explain Angular lifecycle hooks.</strong><br/>A: ngOnInit (data init), ngOnChanges (input changes), ngDoCheck (custom detection), ngOnDestroy (cleanup subscriptions/timers).</li>
+                </ul>
+              </div>
+            </div>
+            <div class="prep-topic" onclick="toggleTopic(this)">
+              <div class="prep-topic-header">
+                <span>⚙️ ASP.NET Core & C#</span><span class="arrow">▾</span>
+              </div>
+              <div class="prep-topic-body">
+                <ul>
+                  <li><strong>Q: Explain Dependency Injection in .NET Core.</strong><br/>A: Built-in IoC container. Services registered in Program.cs (Transient/Scoped/Singleton), injected via constructor — promotes testability and loose coupling.</li>
+                  <li><strong>Q: How does JWT Authentication work?</strong><br/>A: Client sends credentials → server validates & returns signed JWT → client sends JWT in Authorization header → server verifies signature & claims on each request.</li>
+                  <li><strong>Q: What is Middleware in ASP.NET Core?</strong><br/>A: Pipeline of components that handle HTTP requests/responses. Each middleware calls next() or short-circuits. Used for logging, auth, exception handling.</li>
+                  <li><strong>Q: EF Core vs Dapper?</strong><br/>A: EF Core is a full ORM with migrations & LINQ; ideal for CRUD-heavy apps. Dapper is a micro-ORM, faster for complex raw SQL scenarios.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="prep-topic" onclick="toggleTopic(this)">
+              <div class="prep-topic-header">
+                <span>🗄️ SQL Server & Optimization</span><span class="arrow">▾</span>
+              </div>
+              <div class="prep-topic-body">
+                <ul>
+                  <li><strong>Q: How did you achieve 30% efficiency improvement?</strong><br/>A: Analyzed slow queries with Execution Plan, replaced cursors with set-based operations, added covering indexes, and rewrote inefficient stored procedures.</li>
+                  <li><strong>Q: Clustered vs Non-clustered Index?</strong><br/>A: Clustered physically reorders rows (one per table, usually PK). Non-clustered is a separate structure with pointers to data rows — multiple allowed per table.</li>
+                  <li><strong>Q: When to use Stored Procedures vs inline SQL?</strong><br/>A: SPs offer reusability, security (permissions at SP level), and reduced network traffic. Inline SQL is fine for simple one-off queries.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="prep-topic" onclick="toggleTopic(this)">
+              <div class="prep-topic-header">
+                <span>🧪 Testing & Agile</span><span class="arrow">▾</span>
+              </div>
+              <div class="prep-topic-body">
+                <ul>
+                  <li><strong>Q: How did TDD reduce bugs by 40%?</strong><br/>A: Wrote NUnit tests before implementation, caught regressions early in CI, and maintained test coverage for API controllers, services, and edge cases.</li>
+                  <li><strong>Q: Describe your Agile workflow.</strong><br/>A: 2-week sprints with daily standups, sprint planning, story estimation, mid-sprint reviews, and retrospectives. Used SVN for version control and had structured code review processes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">06 / Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-grid">
+        <a href="mailto:balajisrini013@gmail.com" class="contact-card">
+          <div class="cc-icon">✉️</div>
+          <h3>Email</h3>
+          <p>balajisrini013@gmail.com</p>
+        </a>
+        <a href="tel:+917338979707" class="contact-card">
+          <div class="cc-icon">📞</div>
+          <h3>Phone</h3>
+          <p>+91 73389 79707</p>
+        </a>
+        <a href="https://linkedin.com/in/bala013ibis" target="_blank" class="contact-card">
+          <div class="cc-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/bala013ibis</p>
+        </a>
+        <div class="contact-card">
+          <div class="cc-icon">📍</div>
+          <h3>Location</h3>
+          <p>Chennai, Tamil Nadu, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Crafted with ❤️ by <strong>Balaji S</strong> · Full Stack Developer</p>
+    <p class="footer-sub">Built with HTML, CSS & Vanilla JS · Powered by passion & coffee ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
